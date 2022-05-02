@@ -18,7 +18,7 @@ const { NotImplementedError } = require('../extensions/index.js');
   function createDreamTeam(members) {
 
     let arr = [];
-    if (Array.isArray(members)) {
+    if (Array.isArray(members) == true) {
       for (let i = 0; i < members.length; i++) {
         if(typeof(members[i]) == "string") {
           members[i] =  members[i].replace(/\s+/g, '');
